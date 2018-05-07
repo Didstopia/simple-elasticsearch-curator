@@ -1,4 +1,8 @@
 # Simple elasticsearch curator
+[![Docker Automated build](https://img.shields.io/docker/automated/stixes/simple-curator.svg)](https://hub.docker.com/r/stixes/simple-curator/)
+[![Docker build status](https://img.shields.io/docker/build/stixes/simple-curator.svg)](https://hub.docker.com/r/stixes/simple-curator/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/stixes/simple-curator.svg)](https://hub.docker.com/r/stixes/simple-curator/)
+[![Docker stars](https://img.shields.io/docker/stars/stixes/simple-curator.svg)](https://hub.docker.com/r/stixes/simple-curator)
 
 This image holds a simple curator for elasticsearch. A first task when deploying a en ELK/ELF stack is to set up simple retention, to avoid bloating the indices quickly.
 
