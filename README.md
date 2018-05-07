@@ -14,7 +14,7 @@ This makes this image suitable for docker-compose and cluster deployment, unlike
 
     curator:
       image: stixes/simple-curator
-      link:
+      links:
         - elasticsearch:elasticsearch
       environment:
         CURATOR_SLEEP_SECS: 86400 # 24h
