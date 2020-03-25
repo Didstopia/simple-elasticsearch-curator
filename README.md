@@ -1,6 +1,6 @@
 # Simple elasticsearch curator
-[![Docker Automated build](https://img.shields.io/docker/automated/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/stixes/elasticsearch-curator/)
-[![Docker build status](https://img.shields.io/docker/build/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/stixes/elasticsearch-curator/)
+[![Docker Automated build](https://img.shields.io/docker/automated/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/didstopia/elasticsearch-curator/)
+[![Docker build status](https://img.shields.io/docker/build/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/didstopia/elasticsearch-curator/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/didstopia/elasticsearch-curator/)
 [![Docker stars](https://img.shields.io/docker/stars/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/didstopia/elasticsearch-curator)
 
