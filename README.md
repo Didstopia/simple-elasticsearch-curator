@@ -1,8 +1,8 @@
 # Simple elasticsearch curator
-[![Docker Automated build](https://img.shields.io/docker/automated/stixes/simple-curator.svg)](https://hub.docker.com/r/stixes/simple-curator/)
-[![Docker build status](https://img.shields.io/docker/build/stixes/simple-curator.svg)](https://hub.docker.com/r/stixes/simple-curator/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/stixes/simple-curator.svg)](https://hub.docker.com/r/stixes/simple-curator/)
-[![Docker stars](https://img.shields.io/docker/stars/stixes/simple-curator.svg)](https://hub.docker.com/r/stixes/simple-curator)
+[![Docker Automated build](https://img.shields.io/docker/automated/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/stixes/elasticsearch-curator/)
+[![Docker build status](https://img.shields.io/docker/build/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/stixes/elasticsearch-curator/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/didstopia/elasticsearch-curator/)
+[![Docker stars](https://img.shields.io/docker/stars/didstopia/elasticsearch-curator.svg)](https://hub.docker.com/r/didstopia/elasticsearch-curator)
 
 This image holds a simple curator for elasticsearch. A first task when deploying a en ELK/ELF stack is to set up simple retention, to avoid bloating the indices quickly.
 
@@ -13,9 +13,9 @@ Basicly, it sleeps for a bit, then runs the cleanup filter, and a common usecase
 This makes this image suitable for docker-compose and cluster deployment, unlike the base image:
 
     curator:
-      image: stixes/simple-curator
+      image: didstopia/elasticsearch-curator
       links:
-        - elasticsearch:elasticsearch
+        - elasticsearch
       environment:
         CURATOR_SLEEP_SECS: 86400 # 24h
         CURATOR_INDEX_PATTERN: logstash-*
