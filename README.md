@@ -17,9 +17,10 @@ This makes this image suitable for docker-compose and cluster deployment, unlike
       links:
         - elasticsearch
       environment:
-        CURATOR_SLEEP_SECS: 86400 # 24h
+        CURATOR_SLEEP_SECS: 86400 # Runs every 24 hours
         CURATOR_INDEX_PATTERN: logstash-*
-        CURATOR_RETENTION_DAYS: 5
+        CURATOR_RETENTION_UNIT: days
+        CURATOR_RETENTION_AMOUNT: 7 # Removes data older than 7 days
         CURATOR_ES_HOST: elasticsearch
 
 The image assumes elasticsearch running on default ports.
