@@ -20,5 +20,6 @@ This makes this image suitable for docker-compose and cluster deployment, unlike
         CURATOR_SLEEP_SECS: 86400 # 24h
         CURATOR_INDEX_PATTERN: logstash-*
         CURATOR_RETENTION_DAYS: 5
+        CURATOR_ES_HOST: elasticsearch
 
 The image assumes elasticsearch running on default ports.
